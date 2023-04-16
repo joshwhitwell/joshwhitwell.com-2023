@@ -21,13 +21,14 @@ class Logo extends Component
         $color = $this->useRandomColor
             ? Arr::random(config('tailwind.colors'))
             : 'black';
+        $weight =  $color !== 'black' ? '-900' : '';
 
         return implode(
             ' ',
             [
-                "text-{$color}-900",
+                "text-{$color}{$weight}",
                 $this->useHover
-                    ? "hover:stroke-{$color}-900"
+                    ? "hover:stroke-{$color}{$weight}"
                     : ''
             ]
         );
