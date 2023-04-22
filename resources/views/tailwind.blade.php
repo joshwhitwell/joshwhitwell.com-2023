@@ -1,0 +1,7 @@
+<?php
+$classes = [
+    'backgroundClasses' => ['bg-black', 'bg-slate-900', 'bg-gray-900', 'bg-zinc-900', 'bg-neutral-900', 'bg-stone-900', 'bg-red-900', 'bg-orange-900', 'bg-amber-900', 'bg-yellow-900', 'bg-lime-900', 'bg-green-900', 'bg-emerald-900', 'bg-teal-900', 'bg-cyan-900', 'bg-sky-900', 'bg-blue-900', 'bg-indigo-900', 'bg-violet-900', 'bg-purple-900', 'bg-fuchsia-900', 'bg-pink-900', 'bg-rose-900'],
+    'textClasses' => ['text-black', 'text-slate-900', 'text-gray-900', 'text-zinc-900', 'text-neutral-900', 'text-stone-900', 'text-red-900', 'text-orange-900', 'text-amber-900', 'text-yellow-900', 'text-lime-900', 'text-green-900', 'text-emerald-900', 'text-teal-900', 'text-cyan-900', 'text-sky-900', 'text-blue-900', 'text-indigo-900', 'text-violet-900', 'text-purple-900', 'text-fuchsia-900', 'text-pink-900', 'text-rose-900'],
+    'textHoverClasses' => ['hover:stroke-black', 'hover:stroke-slate-900', 'hover:stroke-gray-900', 'hover:stroke-zinc-900', 'hover:stroke-neutral-900', 'hover:stroke-stone-900', 'hover:stroke-red-900', 'hover:stroke-orange-900', 'hover:stroke-amber-900', 'hover:stroke-yellow-900', 'hover:stroke-lime-900', 'hover:stroke-green-900', 'hover:stroke-emerald-900', 'hover:stroke-teal-900', 'hover:stroke-cyan-900', 'hover:stroke-sky-900', 'hover:stroke-blue-900', 'hover:stroke-indigo-900', 'hover:stroke-violet-900', 'hover:stroke-purple-900', 'hover:stroke-fuchsia-900', 'hover:stroke-pink-900', 'hover:stroke-rose-900', 'hover:stroke-red-900'],
+];
+?>

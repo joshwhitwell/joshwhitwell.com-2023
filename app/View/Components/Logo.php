@@ -3,7 +3,6 @@
 namespace App\View\Components;
 
 use Illuminate\View\View;
-use Illuminate\Support\Arr;
 use Illuminate\View\Component;
 
 class Logo extends Component
@@ -11,24 +10,21 @@ class Logo extends Component
     public function __construct(
         public string $fill = 'none',
         public string $stroke = 'none',
-        public bool $useRandomColor = false,
-        public bool $useHover = false
+        public bool $useHover = false,
+        public string $color = 'black',
     ) {
     }
 
-    public function color()
+    public function colorClass()
     {
-        $color = $this->useRandomColor
-            ? Arr::random(config('tailwind.colors'))
-            : 'black';
-        $weight =  $color !== 'black' ? '-900' : '';
+        $weight =  $this->color !== 'black' ? '-900' : '';
 
         return implode(
             ' ',
             [
-                "text-{$color}{$weight}",
+                "text-{$this->color}{$weight}",
                 $this->useHover
-                    ? "hover:stroke-{$color}{$weight}"
+                    ? "hover:stroke-{$this->color}{$weight}"
                     : ''
             ]
         );

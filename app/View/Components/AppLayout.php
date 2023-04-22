@@ -2,14 +2,17 @@
 
 namespace App\View\Components;
 
-use Illuminate\View\Component;
 use Illuminate\View\View;
+use Illuminate\View\Component;
 
 class AppLayout extends Component
 {
-    /**
-     * Get the view / contents that represents the component.
-     */
+    public function __construct(
+        public bool $includeProgressBar = false,
+        public bool $includeNavigation = true,
+    ) {
+    }
+
     public function render(): View
     {
         return view('layouts.app');

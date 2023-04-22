@@ -4,7 +4,7 @@
           'group',
           'stroke-none',
           $useHover ? 'hover:fill-none' : '',
-          $color,
+          $colorClass,
       ]),
   ]) }}
   fill="currentColor"
