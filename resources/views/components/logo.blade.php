@@ -1,11 +1,9 @@
 <svg
-  {{ $attributes->merge([
-      'class' => implode(' ', [
-          'group',
-          'stroke-none',
-          $useHover ? 'hover:fill-none' : '',
-          $colorClass,
-      ]),
+  {{ $attributes->class([
+      'group stroke-none',
+      'stroke-none',
+      'hover:fill-none' => $useHover,
+      $hoverStrokeClass,
   ]) }}
   fill="currentColor"
   stroke="currentColor"

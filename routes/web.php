@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProfileController;
+use App\ViewModels\ThemeViewModel;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,7 +16,7 @@ use App\Http\Controllers\ProfileController;
 */
 
 Route::get('/', function () {
-    return view('joshwhitwell');
+    return view('joshwhitwell', new ThemeViewModel);
 })->name('home');
 
 Route::get('/dashboard', function () {

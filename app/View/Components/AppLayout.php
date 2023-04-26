@@ -8,8 +8,9 @@ use Illuminate\View\Component;
 class AppLayout extends Component
 {
     public function __construct(
-        public bool $includeProgressBar = false,
-        public bool $includeNavigation = true,
+        public ?string $color = 'black',
+        public ?bool $includeProgressBar = false,
+        public ?bool $includeNavigation = true,
     ) {
     }
 

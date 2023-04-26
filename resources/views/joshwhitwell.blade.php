@@ -1,31 +1,35 @@
 <x-app-layout
+  :color="$color"
   :include-navigation="false"
   :include-progress-bar="true"
   class="font-serif"
 >
   <x-slot name="header">
     <div
-      class="align-center mx-auto flex h-screen max-h-screen w-full max-w-7xl justify-center py-6 px-4 sm:px-6 lg:px-8"
+      class="mx-auto flex h-screen max-h-screen w-full max-w-7xl justify-center py-6 px-4 sm:px-6 lg:px-8"
     >
       <a
-        class="align-center flex max-h-full max-w-full cursor-default justify-center"
+        class="flex max-h-full max-w-full cursor-default justify-center"
         href="{{ auth()->check() ? url('/dashboard') : route('login') }}"
       >
         <x-logo
           :use-hover="true"
-          :color="$globalColorTheme"
-          class="max-h-full max-w-full"
+          :color="$color"
+          class="{{ $textColorClass }} max-h-full max-w-full"
         />
       </a>
     </div>
   </x-slot>
 
-  <section>
-    <h1 class="page-title">
+  <section
+    class="{{ $backgroundColorClass }} mx-auto flex h-screen max-w-7xl items-center justify-center sm:px-6 lg:px-8"
+  >
+    <h1 class="text-6xl text-white">
       Josh Whitwell<br />
       <span class="page-title__subtext">Web Developer</span>
     </h1>
   </section>
+
   <section
     class="section section--work"
     id="work"

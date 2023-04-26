@@ -34,7 +34,7 @@
 >
   @if ($includeProgressBar)
     <div
-      class="{{ 'bg-' . $globalColorTheme . '-900' }} fixed top-0 left-0 h-1 w-0 transition-all"
+      class="{{ 'bg-' . $color . '-900' }} fixed top-0 left-0 h-1 w-0 transition-all"
       id="progressBar"
     ></div>
   @endif
@@ -47,7 +47,8 @@
     <header>{{ $header }}</header>
   @endisset
 
-  <main>{{ $slot }}</main>
+  <main>
+    {{ $slot }}</main>
 
   @isset($footer)
     <footer>{{ $footer }}</footer>
